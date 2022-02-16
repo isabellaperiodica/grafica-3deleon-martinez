@@ -1,0 +1,870 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2 , h3 {
+    
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen (min-width: 384px) {
+  
+
+}
+
+@media only screen and (min-width: 480px) {
+    
+.container-grid {
+        display: grid;
+        grid-template-areas:
+            'header '
+            'main '
+            'main '
+            'footer';
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+    }
+
+    header { 
+        grid-area: header;
+    
+    }
+    
+    main { 
+        grid-area: main; 
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+
+.fondo{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#030711+24,1d8bb7+75,6fadce+100 */
+background: rgb(3,7,17); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(3,7,17) 24%, rgb(29,139,183) 75%, rgb(111,173,206) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgb(3,7,17) 24%,rgb(29,139,183) 75%,rgb(111,173,206) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgb(3,7,17) 24%,rgb(29,139,183) 75%,rgb(111,173,206) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030711', endColorstr='#6fadce',GradientType=0 ); /* IE6-9 */
+
+}
+header {
+	background-color: #000;
+
+}
+header h1 {
+    display: none;
+}
+
+.logo {
+   text-align: center;
+   padding-top: 13px;
+   padding-bottom: 10px; 
+}
+
+.logo img {
+    width: 400px;
+}
+.Menu{
+	border-style: double;
+	border-color: thistle;
+	
+	background-color: ;
+}
+.izquierda {
+	float: right;
+}
+nav ul li a {
+	color: seashell;
+	display:block;
+	padding: 10px;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	background-color: rgb(46, 63, 139);
+	padding: 20px,100px
+}
+nav li {
+	display: inline-block;
+	font-size: 2rem;
+}
+
+    main {
+        width: 100%;
+        margin: auto;
+    /*    border: 2px solid #FFF;*/
+    }
+
+    .home-ofrecemos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-ofrecemos h2 {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        color: #FFF;
+    }
+
+    .home-ofrecemos div p {
+        color: #FFF;
+        line-height: 25px;
+	}
+
+    .home-ofrecemos div iframe {
+        width: 100%;
+        height: 300px;
+        margin: 20px 0 20px 0;
+        border: none;
+    }
+
+    .home-ofrecemos div img {
+        width: 100%;
+    }
+
+    .homePost-flex {
+        width: 100%;
+    }
+
+    .homePost-flex div p {
+        color: #FFF;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .homePost-flex div a img {
+        width: 100%;
+    }
+    
+/*    GALERÍA */
+    
+    .productos {
+        width: 100%;
+    }
+    
+    .productos h2 {
+        text-align: center;
+        color: #FFF;
+        padding: 20px 0 20px 0;
+    }
+    
+    .productos > div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .productos div div {
+        width: 48%;
+        margin: auto;
+    }
+    
+    .productos div div img {
+        width: 100%;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+    
+    .productos div div p {
+        color: #FFF;
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .productos div div p span {
+        font-weight: 900;
+        padding: 10px;
+        font-size: 25px;
+        display: inline-block;
+    }
+	
+			
+/*	NOSOTROS */
+	
+	.nosotros, .nosotros-empresa {
+
+	}
+	.nosotros div, .nosotros-empresa div{
+		width: 100%;
+	}
+	
+	.nosotros div h2, .nosotros-empresa h2 {
+		text-align: center;
+		color: #FFF;
+		padding: 20px 0 20px 0;
+	}
+	
+	.nosotros div p, .nosotros-empresa div p, h3 {
+		color: #FFF;
+		line-height: 25px;
+		padding: 10px;
+	}
+	
+	.nosotros div img, .nosotros-empresa div img{
+		width: 100%;
+		margin-top: 70px;
+	}
+	
+	.nosotros-empresa div:nth-child(1) {
+		order: 2;
+	}
+	
+	.nosotros-empresa div:nth-child(2) {
+		order: 1;
+	}
+
+	
+/*	CONTACTO */
+    
+    .contacto {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .contacto h2 p{
+        text-align: center;
+        color: #FFF;
+    }
+    
+    .contacto form {
+        width: 100%;
+        margin: auto;
+
+    }
+    
+    .contacto form div input, textarea {
+        width: 100%;
+        border: 1px solid #09283B;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    
+    .contacto form div input[type=submit] {
+        float: left;
+    }
+    
+    .contacto form div input[type=submit], .contacto form div input[type=reset] {
+        width: 44%;
+        background: #09283B;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
+    .contacto div iframe {
+        width: 100%;
+        border: none;
+    }
+    
+    .select select{
+        width: 100%;
+        background: #19779E;
+        padding: 10px;
+        color: #FFF;
+    }
+    
+    
+
+
+
+footer{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1d8bb7+22,1d8bb7+22,030711+94,030711+99 */
+background: rgb(29,139,183); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(29,139,183) 22%, rgb(29,139,183) 22%, rgb(3,7,17) 94%, rgb(3,7,17) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgb(29,139,183) 22%,rgb(29,139,183) 22%,rgb(3,7,17) 94%,rgb(3,7,17) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgb(29,139,183) 22%,rgb(29,139,183) 22%,rgb(3,7,17) 94%,rgb(3,7,17) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d8bb7', endColorstr='#030711',GradientType=0 ); /* IE6-9 */
+}
+
+footer {
+   width: 100%; 
+   padding-bottom: 15px;
+   padding-top: 15px;
+
+}
+
+footer .footer div {
+    width: 30%;
+    display: inline-block;
+    padding: 15px;
+    color: #FFF;
+    
+}
+
+.redes ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.redes ul li a i {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.pie p {
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+
+@media only screen and (min-width: 576px) {
+   
+    
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container-grid {
+        display: grid;
+        grid-template-areas:
+            'header header '
+            'main main '
+            'main main '
+            'footer footer  ';
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto;
+    }
+	
+	header { 
+        grid-area: header;
+    
+    }
+    
+    main { 
+        grid-area: main; 
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+	
+	.home-ofrecemos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-ofrecemos h2 {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        color: #FFF;
+    }
+	
+	.home-texto-video {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	.home-texto-video > div {
+		width: 48%;
+		
+	}
+
+    .home-ofrecemos div p {
+        color: #FFF;
+        line-height: 25px;
+}
+
+    .home-ofrecemos div iframe {
+        width: 100%;
+        height: 300px;
+        margin: 70px 0 20px 0;
+        border: none;
+    }
+
+    .home-ofrecemos div img {
+        width: 100%;
+    }
+
+    .homePost-flex {
+/*        width: 100%;*/
+		
+    }
+	
+	.homePost-flex h2 {
+		text-align: center;
+		padding: 20px 0 20px 0;
+		
+	}
+	
+	.homePost-flex > div {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+	}
+	
+	.homePost-flex > div div {
+		width: 48%;
+	}
+
+    .homePost-flex div p {
+        color: #FFF;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .homePost-flex div a img {
+        width: 100%;
+    }
+	
+		
+/*	NOSOTROS */
+	
+	.nosotros, .nosotros-empresa {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.nosotros div, .nosotros-empresa div{
+		width: 48%;
+	}
+	
+	.nosotros div h2, .nosotros-empresa h2 {
+		text-align: center;
+		color: #FFF;
+		padding: 20px 0 20px 0;
+	}
+	
+	.nosotros div p, .nosotros-empresa div p, h3 {
+		color: #FFF;
+		line-height: 25px;
+		padding: 10px;
+	}
+	
+	.nosotros div img, .nosotros-empresa div img{
+		width: 100%;
+		margin-top: 70px;
+	}
+	
+	.nosotros-empresa div:nth-child(1) {
+		order: 2;
+	}
+	
+	.nosotros-empresa div:nth-child(2) {
+		order: 1;
+	}
+	
+	/*	CONTACTO */
+    
+    .contacto {
+        width: 100%;
+/*        padding: 10px;*/
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    }
+    
+	.contacto h2 {
+		padding: 20px 0 20px 0;
+	}
+	
+    .contacto h2, p {
+        text-align: center;
+        color: #FFF;
+		padding-bottom: 10px;
+    }
+    
+    .contacto > div {
+        width: 49%;
+		
+
+    }
+	
+	.contacto div form {
+		width: 100%;
+	}
+    
+    .contacto form div input, textarea {
+        width: 100%;
+        border: 1px solid #19779E;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    
+    .contacto form div input[type=submit] {
+        float: left;
+    }
+    
+    .contacto form div input[type=submit], .contacto form div input[type=reset] {
+        width: 44%;
+        background: #09283B;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
+    .contacto div iframe {
+        border: none;
+		height: 100%;
+		width: 100%;
+    }
+    
+    .select select{
+        width: 100%;
+        background: #19779E;
+        padding: 10px;
+        color: #FFF;
+    }
+	
+	footer {
+   		width: 100%; 
+   		padding-bottom: 15px;
+   		padding-top: 15px;
+
+	}
+	
+	.footer{
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .footer div {
+		width: 30%;
+		display: inline-block;
+		padding: 15px;
+		color: #FFF;
+
+	}
+
+	.redes ul li {
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+
+	.redes ul li a i {
+		color: #FFF;
+		font-size: 25px;
+	}
+
+	.pie p {
+		color: #FFF;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+
+	}
+
+
+    
+
+}
+
+@media only screen and (min-width: 991px) {
+    
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.container-grid {
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'main main main'
+            'main main main'
+            'footer footer footer ';
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    header { 
+        grid-area: header;
+    
+    }
+    
+    main { 
+        grid-area: main; 
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+	
+	
+    main {
+    width: 1200px;
+    margin: auto;
+    border: 2px solid #FFF;
+	}
+
+	.home-ofrecemos {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.home-ofrecemos h2 {
+		text-align: center;
+		padding: 20px 0 20px 0;
+		color: #FFF;
+	}
+
+	.home-ofrecemos div p {
+		color: #FFF;
+		line-height: 25px;
+	}
+
+	.home-ofrecemos div iframe {
+		width: 100%;
+		height: 300px;
+		margin: 20px 0 20px 0;
+		border: none;
+	}
+
+	.home-ofrecemos div img {
+		width: 50%;
+		margin-top: 60px;
+	}
+    .home-texto-video {
+ 
+        width: 500px;
+        float: right;
+    }
+    
+    .home-texto-video div {
+        width: 100%;
+    }
+
+	.homePost-flex {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+	}
+    .homePost-flex h2 {
+        padding: 20px 0 20px 0;
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .homePost-flex div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .homePost-flex div div {
+        width: 380px;
+    }
+    .homePost-flex div a img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .homePost-flex div p {
+        color: #FFF;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    
+    /*    GALERÍA */
+    
+    .productos {
+        width: 100%;
+    }
+    
+    .productos h2 {
+        text-align: center;
+        color: #FFF;
+        padding: 20px 0 20px 0;
+    }
+    
+    .productos > div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .productos div div {
+        width: 380px;
+        margin: auto;
+    }
+    
+    .productos div div img {
+        width: 100%;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+    
+    .productos div div p {
+        color: #FFF;
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .productos div div p span {
+        font-weight: 900;
+        padding: 10px;
+        font-size: 25px;
+        display: inline-block;
+    }
+	
+/*	NOSOTROS */
+	
+	.nosotros, .nosotros-empresa {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.nosotros div, .nosotros-empresa div{
+		width: 590px;
+	}
+	
+	.nosotros div h2, .nosotros-empresa h2 {
+		text-align: center;
+		color: #FFF;
+		padding: 20px 0 20px 0;
+	}
+	
+	.nosotros div p, .nosotros-empresa div p, h3 {
+		color: #FFF;
+		line-height: 25px;
+		padding: 10px;
+	}
+	
+	.nosotros div img, .nosotros-empresa div img{
+		width: 100%;
+	}
+	
+	.nosotros-empresa div:nth-child(1) {
+		order: 2;
+	}
+	
+	.nosotros-empresa div:nth-child(2) {
+		order: 1;
+	}
+	
+/*	CONTACTO */
+    
+    .contacto {
+        width: 100%;
+/*        padding: 10px;*/
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    }
+    
+	.contacto h2 {
+		padding: 20px 0 20px 0;
+	}
+	
+    .contacto h2, p {
+        text-align: center;
+        color: #FFF;
+		padding-bottom: 10px;
+    }
+    
+    .contacto > div {
+        width: 49%;
+		
+
+    }
+	
+	.contacto div form {
+		width: 100%;
+	}
+    
+    .contacto form div input, textarea {
+        width: 100%;
+        border: 1px solid #19779E;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    
+    .contacto form div input[type=submit] {
+        float: left;
+    }
+    
+    .contacto form div input[type=submit], .contacto form div input[type=reset] {
+        width: 44%;
+        background: #09283B;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
+    .contacto div iframe {
+        border: none;
+		height: 100%;
+		width: 100%;
+    }
+    
+    .select select{
+        width: 100%;
+        background: #19779E;
+        padding: 10px;
+        color: #FFF;
+    }
+	
+	footer {
+   width: 100%; 
+   padding-bottom: 15px;
+   padding-top: 15px;
+
+	}
+
+	footer .footer div {
+		width: 30%;
+		display: inline-block;
+		padding: 15px;
+		color: #FFF;
+
+	}
+
+	.redes ul li {
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+
+	.redes ul li a i {
+		color: #FFF;
+		font-size: 25px;
+	}
+
+	.pie p {
+		color: #FFF;
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+
+	}
+    
+	
+    
+}
+
+@media only screen and (max-width: 1200px) {
+/*ESTO ES PARA TRABAJAR PARA MONITORES SUPER MONITORES */
+
+}
+
+
+
+
+
+	
